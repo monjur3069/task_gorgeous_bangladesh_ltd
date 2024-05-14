@@ -394,7 +394,7 @@ class SignUpScreen extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: 20.h,),
-                      Obx(()=> CommonButton(btnName: 'Sign Up',btnColor: controller.isChecked.value ? const Color(0xffC1272D) : const Color(0xffF9E9EA),)),
+                      Obx(()=> GestureDetector(onTap: ()=>Get.toNamed(Routes.bottomBarRoute),child: CommonButton(btnName: 'Sign Up',btnColor: controller.isChecked.value ? const Color(0xffC1272D) : const Color(0xffF9E9EA),))),
                       SizedBox(height: 10.h,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
